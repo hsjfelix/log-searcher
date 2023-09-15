@@ -11,7 +11,7 @@ public class MainApp {
     public static final String BASE_URI = "http://localhost:8080/";
 
     public static Server startServer() {
-
+        // automatically load classes annotated with @Path
         final ResourceConfig config = new ResourceConfig().packages("com.felix");
 
         final Server server =
