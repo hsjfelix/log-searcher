@@ -16,7 +16,6 @@ public final class FileSearchUtils {
 
     private FileSearchUtils() {}
 
-    // 10 MB per chunk
     private static final int CHUNK_SIZE = 1024 * 1024 * 10;
 
     public static List<String> searchFile(
