@@ -17,11 +17,13 @@ The REST API endpoint for searching a log file in the /var/log directory is
 
 ```localhost:8080/logs/filename```
 
-For example, if you want to query the file with name system.log, you can call (using a tool like curl). If such file does not exist in the /var/log directory, 404 will be returned
+For example, if you want to query the file with the name system.log, you can call (using a tool like curl). 
 
 ```localhost:8080/logs/system.log```
 
-By default, at most 500 entries are returned, with the latest log events presented first. If you want to specify the max number of matching entries, you can use query param maxNumOfEntries
+If such file does not exist in the /var/log directory, 404 will be returned
+
+By default, at most 500 entries are returned, with the latest log events presented first. If you want to specify the max number of matching entries, you can use the query param maxNumOfEntries
 
 ```localhost:8080/logs/system.log?maxNumOfEntries=50```
 
