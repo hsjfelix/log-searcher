@@ -35,6 +35,4 @@ If you want to search for logs that match certain keywords, you can use the quer
 
 To build the project:
 
-```mvn clean install```
-
 ```mvn clean package```
